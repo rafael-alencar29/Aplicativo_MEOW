@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">MEOW</string>
+    <string name="cadastro_do_animal">Cadastro do Animal</string>
+    <string name="menu">Menu</string>
+    <string name="apadrinhar">APADRINHAR</string>
+    <string name="ajuda">AJUDA</string>
+    <string name="tenho_interesse_em_cadastrar_o_animal_para">Tenho interesse em cadastrar o animal para:</string>
+    <string name="ado_o">Adoção</string>
+    <string name="adocao">adoção</string>
+    <string name="nome_do_animal">NOME DO ANIMAL</string>
+    <string name="nomedoanimal">Nome do animal</string>
+    <string name="fotos_do_animal">FOTOS DO ANIMAL</string>
+    <string name="cachorro">Cachorro</string>
+    <string name="gato">Gato</string>
+    <string name="esp_cie">ESPÉCIE</string>
 </resources>

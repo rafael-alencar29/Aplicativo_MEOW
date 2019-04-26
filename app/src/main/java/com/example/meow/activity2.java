@@ -8,19 +8,19 @@ import android.widget.Button;
 
 public class activity2 extends AppCompatActivity {
 
-    Button adotarButton;
+    Button cadastroButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity2);
 
-        adotarButton = findViewById(R.id.adotarButton);
-        adotarButton.setOnClickListener(new View.OnClickListener() {
+        cadastroButton = findViewById(R.id.cadastroButton);
+        cadastroButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(activity2.this, com.example.meow.adotar.class);
+                Intent intent = new Intent(activity2.this, cadastroAnimal.class);
                 startActivity(intent);
             }
         });
