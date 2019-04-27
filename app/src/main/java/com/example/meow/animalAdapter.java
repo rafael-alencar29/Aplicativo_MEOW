@@ -76,6 +76,8 @@ public class animalAdapter extends RecyclerView.Adapter<animalAdapter.ViewHolder
 
         }else if (animal.get(i).getNome().equals("Daisy")){
             viewHolder.imageDog.setImageResource(R.drawable.dog3);
+        }else if (animal.get(i).getNome().equals("Daisy 2")) {
+            viewHolder.imageDog.setImageResource(R.drawable.dog4);
         }
     }
 
