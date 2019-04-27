@@ -3,123 +3,140 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="320dp"
-    android:background="@color/colorBackgroundAdotar">
+    android:layout_height="419dp">
 
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbarAdotar"
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView2"
         android:layout_width="0dp"
-        android:layout_height="32dp"
-        android:background="#fee29b"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/dogName"
-        android:layout_width="56dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/roboto"
-        android:text="Charlie"
-        android:textColor="#434343"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/toolbarAdotar"
-        app:layout_constraintTop_toTopOf="@+id/toolbarAdotar" />
-
-    <ImageView
-        android:id="@+id/favourite_border"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/toolbarAdotar"
-        app:layout_constraintHorizontal_bias="0.938"
-        app:layout_constraintStart_toEndOf="@+id/dogName"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/favourite_border" />
+        card_view:cardBackgroundColor="#FFFFFF"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="false">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="277dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarAdotar">
-
-        <ImageView
-            android:id="@+id/imageDog"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="183dp"
-            app:srcCompat="@drawable/dog1" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="373dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_horizontal">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
 
-            <TextView
-                android:id="@+id/sexo"
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#ffd358"
+                    android:minHeight="?attr/actionBarSize"
+                    android:theme="?attr/actionBarTheme"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/dogName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="TextView"
+                        android:textColor="#434343"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/favourite_border"
+                        android:layout_width="24dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/favourite_border" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <ImageView
+                android:id="@+id/imageDog"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="TextView"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                android:layout_height="308dp"
+                app:srcCompat="@drawable/dog1" />
 
-            <TextView
-                android:id="@+id/idade"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:text="TextView"
-                app:layout_constraintEnd_toStartOf="@+id/porte"
-                app:layout_constraintStart_toEndOf="@+id/sexo"
-                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/porte"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="36dp"
-                android:layout_marginBottom="8dp"
-                android:text="TextView"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:id="@+id/sexo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="TextView"
+                    android:textColor="#434343"
+                    android:textSize="12sp" />
 
-            <TextView
-                android:id="@+id/endereco"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="TextView"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/idade"
-                app:layout_constraintVertical_bias="0.153" />
-        </android.support.constraint.ConstraintLayout>
+                <TextView
+                    android:id="@+id/idade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="TextView"
+                    android:textColor="#434343"
+                    android:textSize="12sp" />
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/porte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="TextView"
+                    android:textColor="#434343"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/endereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="TextView"
+                    android:textColor="#434343"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
 
 </android.support.constraint.ConstraintLayout>
