@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "397536269431",
+    "firebase_url": "https://aplicativo-meow.firebaseio.com",
+    "project_id": "aplicativo-meow",
+    "storage_bucket": "aplicativo-meow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397536269431:android:182c38fc277898b5",
+        "android_client_info": {
+          "package_name": "com.example.meow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397536269431-hvlsulf1gpeu4ktfaotbotvcq135l3ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQBm7cI6oya6KAU3uZ2HKmRwhCXuDisjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397536269431-hvlsulf1gpeu4ktfaotbotvcq135l3ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
