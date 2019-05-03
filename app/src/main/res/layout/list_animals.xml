@@ -76,6 +76,7 @@
                 android:id="@+id/imageDog"
                 android:layout_width="wrap_content"
                 android:layout_height="308dp"
+                android:clickable="true"
                 app:srcCompat="@drawable/dog1" />
 
             <LinearLayout

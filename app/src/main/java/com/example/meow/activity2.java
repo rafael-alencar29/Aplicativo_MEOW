@@ -11,6 +11,7 @@ public class activity2 extends AppCompatActivity {
     Button cadastroButton;
     Button adotarButton;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
