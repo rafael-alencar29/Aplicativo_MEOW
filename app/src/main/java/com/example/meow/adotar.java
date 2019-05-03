@@ -44,16 +44,20 @@ public class adotar extends AppCompatActivity implements animalAdapter.OnItemLis
         myAdapter = new animalAdapter(this,animal,this);
         recyclerView.setAdapter(myAdapter);
 
-
-
-
     }
-
     @Override
     public void onItemClick(int position) {
         animal.get(position);
 
-        Intent intent = new Intent(this, adocaoAnimal.class);
-        startActivity(intent);
+        if( position == 0){
+            Intent intent = new Intent(this, adocaoAnimal.class);
+            startActivity(intent);
+
+        }else{
+            Intent intent = new Intent(this, teste.class);
+            startActivity(intent);
+        }
+
+
     }
 }
