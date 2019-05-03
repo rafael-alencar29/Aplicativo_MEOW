@@ -13,8 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".adocaoAnimal"></activity>
-        <activity android:name=".cadastroAnimal"></activity>
+        <activity android:name=".teste"></activity>
+        <activity android:name=".adocaoAnimal" />
+        <activity android:name=".cadastroAnimal" />
         <activity android:name=".activity2" />
         <activity android:name=".adotar" />
         <activity android:name=".MainActivity">
