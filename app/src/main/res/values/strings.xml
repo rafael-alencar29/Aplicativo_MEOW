@@ -13,4 +13,9 @@
     <string name="cachorro">Cachorro</string>
     <string name="gato">Gato</string>
     <string name="esp_cie">ESPÉCIE</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">315722215763963</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb315722215763963</string>
+
 </resources>

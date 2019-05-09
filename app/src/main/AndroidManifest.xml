@@ -14,6 +14,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".teste"></activity>
+        <activity android:name=".login" />
         <activity android:name=".adocaoAnimal" />
         <activity android:name=".cadastroAnimal" />
         <activity android:name=".activity2" />
