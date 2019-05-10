@@ -7,13 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 public class activity2 extends AppCompatActivity {
 
     Button cadastroButton;
     Button adotarButton;
     TextView textologin;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +48,6 @@ public class activity2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
-
     }
+
 }

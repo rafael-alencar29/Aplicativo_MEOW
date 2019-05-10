@@ -16,6 +16,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 
 public class login extends AppCompatActivity {
@@ -66,11 +68,22 @@ public class login extends AppCompatActivity {
     }
 
     private void updateUI(@Nullable GoogleSignInAccount account) {
-        if (account != null) {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            // recuperar informaçoes do usuario
+            String name = user.getDisplayName();
+            String email = user.getEmail();
+
+            boolean emailVerified = user.isEmailVerified();
+
+            String uid = user.getUid();
+        }
+
+        /*if (account != null) {
             googleButton.setVisibility(View.GONE);
         } else {
 
-        }
+        }*/
     }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

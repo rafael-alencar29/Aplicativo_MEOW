@@ -222,14 +222,14 @@
             android:text="@string/esp_cie"
             android:textColor="#f7a800"
             android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/radioButton"
+            app:layout_constraintBottom_toTopOf="@+id/rBcachorro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rBcachorro"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="24dp"
@@ -247,7 +247,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rBgato"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="124dp"
@@ -257,7 +257,7 @@
             android:text="@string/gato"
             android:textColor="#757575"
             android:textSize="14sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/radioButton"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rBcachorro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
@@ -274,14 +274,14 @@
             android:text="SEXO"
             android:textColor="#f7a800"
             android:textSize="12sp"
-            app:layout_constraintBottom_toTopOf="@+id/radioButton3"
+            app:layout_constraintBottom_toTopOf="@+id/rBmacho"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+            app:layout_constraintTop_toBottomOf="@+id/rBcachorro" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rBmacho"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="24dp"
@@ -297,7 +297,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/rBfemea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="124dp"
@@ -306,7 +306,7 @@
             android:fontFamily="@font/roboto"
             android:text="Fêmea"
             android:textColor="#757575"
-            app:layout_constraintBaseline_toBaselineOf="@+id/radioButton3"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rBmacho"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
@@ -325,10 +325,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+            app:layout_constraintTop_toBottomOf="@+id/rBmacho" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/rBpequeno"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_marginStart="24dp"
@@ -342,7 +342,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/rBmedio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="124dp"
@@ -351,13 +351,13 @@
             android:fontFamily="@font/roboto"
             android:text="Médio"
             android:textColor="#757575"
-            app:layout_constraintBaseline_toBaselineOf="@+id/radioButton5"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rBpequeno"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <RadioButton
-            android:id="@+id/radioButton7"
+            android:id="@+id/rBgrande"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="220dp"
@@ -366,7 +366,7 @@
             android:fontFamily="@font/roboto"
             android:text="Grande"
             android:textColor="#757575"
-            app:layout_constraintBaseline_toBaselineOf="@+id/radioButton5"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rBpequeno"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
@@ -385,10 +385,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
+            app:layout_constraintTop_toBottomOf="@+id/rBpequeno" />
 
         <RadioButton
-            android:id="@+id/radioButton8"
+            android:id="@+id/rBfilhote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
@@ -399,27 +399,28 @@
             android:text="Filhote"
             android:textColor="#757575"
             android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <RadioButton
-            android:id="@+id/radioButton9"
+            android:id="@+id/rBadulto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="124dp"
             android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
             android:buttonTint="#757575"
             android:fontFamily="@font/roboto"
             android:text="Adulto"
             android:textColor="#757575"
-            app:layout_constraintBaseline_toBaselineOf="@+id/radioButton8"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rBfilhote"
+            app:layout_constraintBottom_toTopOf="@+id/PROCURAR"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <RadioButton
-            android:id="@+id/radioButton10"
+            android:id="@+id/rBidoso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="220dp"
@@ -428,10 +429,24 @@
             android:fontFamily="@font/roboto"
             android:text="Idoso"
             android:textColor="#757575"
-            app:layout_constraintBaseline_toBaselineOf="@+id/radioButton8"
+            app:layout_constraintBaseline_toBaselineOf="@+id/rBfilhote"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/PROCURAR"
+            android:layout_width="232dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="24dp"
+            android:background="#ffd358"
+            android:text="PROCURAR PADRINHO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rBadulto" />
 
 
     </android.support.constraint.ConstraintLayout>
