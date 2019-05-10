@@ -10,22 +10,31 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.AuthResult;
+
 import com.google.firebase.auth.FirebaseUser;
 
 
 public class login extends AppCompatActivity {
 
+    private FirebaseAuth mAuth;
+
     Button googleButton;
     private static final String TAG = "SignInActivity";
     private static int RC_SIGN_IN = 100;
     private GoogleSignInClient mGoogleSignInClient;
+
+    //
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +42,9 @@ public class login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         googleButton = findViewById(R.id.GOOGLE);
         googleButton.setOnClickListener(new View.OnClickListener() {
+
+
+
             @Override
             public void onClick(View view) {
                 switch(view.getId()) {
@@ -68,22 +80,11 @@ public class login extends AppCompatActivity {
     }
 
     private void updateUI(@Nullable GoogleSignInAccount account) {
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        if (user != null) {
-            // recuperar informaçoes do usuario
-            String name = user.getDisplayName();
-            String email = user.getEmail();
-
-            boolean emailVerified = user.isEmailVerified();
-
-            String uid = user.getUid();
-        }
-
-        /*if (account != null) {
+        if (account != null) {
             googleButton.setVisibility(View.GONE);
         } else {
 
-        }*/
+        }
     }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
