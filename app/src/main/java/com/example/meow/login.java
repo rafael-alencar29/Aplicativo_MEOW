@@ -20,7 +20,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.AuthResult;
-
 import com.google.firebase.auth.FirebaseUser;
 
 
@@ -33,7 +32,7 @@ public class login extends AppCompatActivity {
     private static int RC_SIGN_IN = 100;
     private GoogleSignInClient mGoogleSignInClient;
 
-    //
+
 
 
     @Override
@@ -41,6 +40,7 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         googleButton = findViewById(R.id.GOOGLE);
+        mAuth = FirebaseAuth.getInstance();
         googleButton.setOnClickListener(new View.OnClickListener() {
 
 
