@@ -13,9 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".cadastroPessoa"></activity>
+        <activity android:name=".login"></activity>
+        <activity android:name=".cadastroPessoa" />
         <activity android:name=".teste" />
-        <activity android:name=".login" />
         <activity android:name=".adocaoAnimal" />
         <activity android:name=".cadastroAnimal" />
         <activity android:name=".activity2" />
