@@ -8,12 +8,12 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -28,12 +28,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-
-import java.io.File;
-import java.util.UUID;
 
 public class cadastroAnimal extends AppCompatActivity {
 
@@ -45,7 +41,7 @@ public class cadastroAnimal extends AppCompatActivity {
 
     /* Declaração para cadastro no database */
     DatabaseReference databaseReference;
-    private EditText nomeAnimal, doenca;
+     EditText nomeAnimal, doenca;
     private RadioButton cachorro, gato;
     private RadioButton macho, femea;
     private RadioButton pequeno, medio, grande;
@@ -56,6 +52,7 @@ public class cadastroAnimal extends AppCompatActivity {
 
     /* Declaração para salvar imagem no banco */
     private StorageReference storageReference;
+
     private ProgressDialog pd;
 
     @Override
@@ -107,7 +104,8 @@ public class cadastroAnimal extends AppCompatActivity {
         vermifugado = findViewById(R.id.cbVermifugado);
         castrado = findViewById(R.id.cbCastrado);
         doente = findViewById(R.id.cbDoente);
-        doenca = findViewById(R.id.editText1);
+        doenca = findViewById(R.id.text_id);
+
 
         /* Funcoes para salvar imagem no banco */
         storageReference = FirebaseStorage.getInstance().getReference();
