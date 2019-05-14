@@ -55,6 +55,7 @@ public class cadastroAnimal extends AppCompatActivity {
 
     private ProgressDialog pd;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -114,6 +115,7 @@ public class cadastroAnimal extends AppCompatActivity {
 
 
         cadastrar = findViewById(R.id.PROCURAR);
+
         cadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -18,13 +18,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/arrow_back2"
         android:layout_width="0dp"
         android:layout_height="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="16dp"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar4"
         app:layout_constraintEnd_toStartOf="@+id/textView36"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +43,7 @@
         android:textColor="#434343"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/arrow_back2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -52,12 +53,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="519dp"
         android:fontFamily="@font/courgette"
         android:text="Ops!"
         android:textColor="#88c9bf"
         android:textSize="53sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
@@ -96,7 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/go_login"
         android:layout_width="232dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"

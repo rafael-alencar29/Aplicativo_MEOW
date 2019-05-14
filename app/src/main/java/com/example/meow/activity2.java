@@ -1,12 +1,13 @@
 package com.example.meow;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 
 public class activity2 extends AppCompatActivity {
 
@@ -25,17 +26,39 @@ public class activity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(activity2.this, com.example.meow.adotar.class);
-                startActivity(intent);
+                /* Verifica se o usuario estah logado, caso nao estaja uma tela
+                 *   cadastro de pessoa eh aberto
+                 *   onde o login podera ser feito*/
+                if(FirebaseAuth.getInstance().getCurrentUser() != null){
+                    Intent intent = new Intent(activity2.this, com.example.meow.adotar.class);
+                    startActivity(intent);
+
+                }else{
+                    Intent intent = new Intent(activity2.this, cadastroPessoa.class);
+                    startActivity(intent);
+                }
+
             }
         });
+
         cadastroButton = findViewById(R.id.CADASTRAR);
         cadastroButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(activity2.this, cadastroAnimal.class);
-                startActivity(intent);
+
+                /* Verifica se o usuario estah logado, caso nao estaja uma tela
+                *   cadastro de pessoa eh aberto
+                *   onde o login podera ser feito*/
+                if(FirebaseAuth.getInstance().getCurrentUser() != null) {
+
+                    Intent intent = new Intent(activity2.this, cadastroAnimal.class);
+                    startActivity(intent);
+
+                }else {
+                   Intent intent = new Intent(activity2.this, cadastroPessoa.class);
+                   startActivity(intent);
+                }
             }
         });
 
