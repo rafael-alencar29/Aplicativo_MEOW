@@ -12,7 +12,7 @@ public class activity2 extends AppCompatActivity {
 
     Button cadastroButton;
     Button adotarButton;
-    TextView textologin;
+    TextView login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +39,8 @@ public class activity2 extends AppCompatActivity {
             }
         });
 
-        textologin = findViewById(R.id.login);
-        textologin.setOnClickListener(new View.OnClickListener() {
+        login = findViewById(R.id.login);
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

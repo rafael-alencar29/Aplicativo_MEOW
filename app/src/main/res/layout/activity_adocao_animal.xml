@@ -73,17 +73,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_menu_share" />
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
-            android:tint="#434343"
-            app:layout_constraintStart_toStartOf="@+id/toolbar"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_media_previous" />
-
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
@@ -343,7 +332,7 @@
             android:layout_marginBottom="32dp"
             android:background="#ffd358"
             android:fontFamily="@font/roboto"
-            android:text="PRETENDOADOTAR"
+            android:text="PRETENDO ADOTAR"
             android:textSize="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -359,6 +348,17 @@
             android:text="Calmo e dócil"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/left_arrow" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
