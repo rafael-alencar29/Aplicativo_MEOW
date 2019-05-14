@@ -7,14 +7,20 @@ public class DadosAnimal {
     private String Sexo;
     private String Porte;
     private String Idade;
+    private String Temperamento;
+    private String Saude;
+    private String Doencas;
 
-    public DadosAnimal(String IDAnimal, String nomeAnimal, String racaAnimal, String sexo, String porte, String idade) {
+    public DadosAnimal(String IDAnimal, String nomeAnimal, String racaAnimal, String sexo, String porte, String idade, String temperamento, String saude, String doencas) {
         this.IDAnimal = IDAnimal;
         NomeAnimal = nomeAnimal;
         RacaAnimal = racaAnimal;
         Sexo = sexo;
         Porte = porte;
         Idade = idade;
+        Temperamento = temperamento;
+        Saude = saude;
+        Doencas = doencas;
     }
 
     public String getIDAnimal() {
@@ -39,5 +45,17 @@ public class DadosAnimal {
 
     public String getIdade() {
         return Idade;
+    }
+
+    public String getTemperamento() {
+        return Temperamento;
+    }
+
+    public String getSaude() {
+        return Saude;
+    }
+
+    public String getDoencas() {
+        return Doencas;
     }
 }
