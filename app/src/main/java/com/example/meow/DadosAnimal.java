@@ -10,8 +10,9 @@ public class DadosAnimal {
     private String Temperamento;
     private String Saude;
     private String Doencas;
+    private String IDDono;
 
-    public DadosAnimal(String IDAnimal, String nomeAnimal, String racaAnimal, String sexo, String porte, String idade, String temperamento, String saude, String doencas) {
+    public DadosAnimal(String IDAnimal, String nomeAnimal, String racaAnimal, String sexo, String porte, String idade, String temperamento, String saude, String doencas, String IDDono) {
         this.IDAnimal = IDAnimal;
         NomeAnimal = nomeAnimal;
         RacaAnimal = racaAnimal;
@@ -21,6 +22,7 @@ public class DadosAnimal {
         Temperamento = temperamento;
         Saude = saude;
         Doencas = doencas;
+        this.IDDono = IDDono;
     }
 
     public String getIDAnimal() {
@@ -57,5 +59,9 @@ public class DadosAnimal {
 
     public String getDoencas() {
         return Doencas;
+    }
+
+    public String getIDDono() {
+        return IDDono;
     }
 }

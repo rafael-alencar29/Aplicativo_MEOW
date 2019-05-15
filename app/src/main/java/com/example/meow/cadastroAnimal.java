@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -166,8 +167,9 @@ public class cadastroAnimal extends AppCompatActivity {
 
         if (!TextUtils.isEmpty(nome)) {
             String id = databaseReference.push().getKey();
+            String Donoid = FirebaseAuth.getInstance().getUid();
 
-            DadosAnimal animais = new DadosAnimal(id, nome, especie, sexo, porte, idade, temperamento, saude, doencas);
+            DadosAnimal animais = new DadosAnimal(id, nome, especie, sexo, porte, idade, temperamento, saude, doencas, Donoid);
             databaseReference.child(id).setValue(animais);
 
             /* Salvar imagem no storage */

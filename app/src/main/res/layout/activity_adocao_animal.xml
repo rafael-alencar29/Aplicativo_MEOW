@@ -326,7 +326,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/pretendoAdotar"
             android:layout_width="232dp"
             android:layout_height="40dp"
             android:layout_marginTop="15dp"
