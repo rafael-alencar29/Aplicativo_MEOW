@@ -32,7 +32,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-public class cadastroAnimal extends AppCompatActivity {
+
+public class cadastroAnimal extends AppCompatActivity  {
 
     /* Declaração para abrir galeria */
     private ImageView imagem;
@@ -42,7 +43,7 @@ public class cadastroAnimal extends AppCompatActivity {
 
     /* Declaração para cadastro no database */
     DatabaseReference databaseReference;
-     EditText nomeAnimal, doenca;
+     EditText nomeAnimal, doenca,enderecoPet;
     private RadioButton cachorro, gato;
     private RadioButton macho, femea;
     private RadioButton pequeno, medio, grande;
@@ -61,6 +62,8 @@ public class cadastroAnimal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastroanimal);
+
+
 
         /* Funcoes para galeria */
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
@@ -86,6 +89,7 @@ public class cadastroAnimal extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("animais");
 
         nomeAnimal = findViewById(R.id.editText);
+        enderecoPet = findViewById(R.id.enderecoAnimal);
         cachorro = findViewById(R.id.rBcachorro);
         gato = findViewById(R.id.rBgato);
         macho = findViewById(R.id.rBmacho);
@@ -129,6 +133,7 @@ public class cadastroAnimal extends AppCompatActivity {
 
     protected void addAnimal() {
         String nome = nomeAnimal.getText().toString();
+        String endereco = enderecoPet.getText().toString();
         String doencas = doenca.getText().toString();
         String especie, sexo, porte, idade, temperamento, saude;
 
@@ -161,15 +166,12 @@ public class cadastroAnimal extends AppCompatActivity {
         temperamento = Temperamentos();
         saude = Saude();
 
-
-
-
-
         if (!TextUtils.isEmpty(nome)) {
             String id = databaseReference.push().getKey();
             String Donoid = FirebaseAuth.getInstance().getUid();
 
-            DadosAnimal animais = new DadosAnimal(id, nome, especie, sexo, porte, idade, temperamento, saude, doencas, Donoid);
+            DadosAnimal animais = new DadosAnimal(id, nome, especie, sexo, porte, idade,temperamento, saude, doencas, Donoid,endereco);
+
             databaseReference.child(id).setValue(animais);
 
             /* Salvar imagem no storage */
@@ -220,6 +222,8 @@ public class cadastroAnimal extends AppCompatActivity {
             castrado.setChecked(false);
             doente.setChecked(false);
             doenca.setText("");
+            enderecoPet.setText("");
+
         } else {
             Toast.makeText(cadastroAnimal.this, "Digite o nome do animal", Toast.LENGTH_LONG).show();
         }
@@ -323,6 +327,7 @@ public class cadastroAnimal extends AppCompatActivity {
         }
         return saudeAnimal;
     }
+
 
 
 }

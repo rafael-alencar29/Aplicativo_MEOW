@@ -11,14 +11,16 @@ public class DadosAnimal {
     private String Saude;
     private String Doencas;
     private String IDDono;
+    private String Endereco;
 
-    public DadosAnimal(String IDAnimal, String nomeAnimal, String racaAnimal, String sexo, String porte, String idade, String temperamento, String saude, String doencas, String IDDono) {
+    public DadosAnimal(String IDAnimal, String nomeAnimal, String racaAnimal, String sexo, String porte, String idade, String temperamento, String saude, String doencas, String IDDono,String endereco) {
         this.IDAnimal = IDAnimal;
         NomeAnimal = nomeAnimal;
         RacaAnimal = racaAnimal;
         Sexo = sexo;
         Porte = porte;
         Idade = idade;
+        Endereco = endereco;
         Temperamento = temperamento;
         Saude = saude;
         Doencas = doencas;
@@ -64,4 +66,6 @@ public class DadosAnimal {
     public String getIDDono() {
         return IDDono;
     }
+
+    public String getEndereco() { return Endereco; }
 }
